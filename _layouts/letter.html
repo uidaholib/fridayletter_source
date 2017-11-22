@@ -1,11 +1,21 @@
 ---
-layout: page
+layout: default
 ---
 
-<h2 id="letter-title">Friday Letter {{ page.date}}:<br>{{ page.title }}</h2>
+{% include collection-banner.html %}
+{% include all-collections-nav.html %}
+{% include collection-nav.html %}
 
-<div class="letter"> {{ page.body }}</div>
+<div class="page-content">
+    <div class="wrapper">
 
-<div class="back-button">
-    <a href="{{ site.baseurl }}/">❮ Back to Archive Home</a>
+        <h2 id="letter-title">Friday Letter {{ page.date}}:<br>{{ page.title }}</h2>
+
+        <div class="letter"> {{ page.body }}</div>
+
+        <div class="back-button">
+            <a href="{{ site.baseurl }}/">❮ Back to Archive Home</a>
+        </div>
+    </div>
 </div>
+{% include all-collections-js.html %}

@@ -476,6 +476,14 @@ width:100%;
     width:90%;
   }
 }
+.letter {
+  width:75%;
+  margin:0% auto;
+  font-size: 18px;
+  @include media-query($on-palm) {
+    width:90%;
+  }
+}
 .back-button {
   display: inline-block;
   border: solid 1px grey;
@@ -1487,9 +1495,9 @@ div.jp-audio div.jp-type-single div.jp-interface {
     @include media-query($on-palm) {
     width: 90%;}}
 
-    .row { @include media-query($on-palm) {
+    .row {
   margin-left: 0rem;
-  margin-right: 0rem; }}
+  margin-right: 0rem; }
 
  .larrow, .larrowinfo { @include media-query($on-palm) {
   left:-90px;background-color:transparent;border: none; }}
