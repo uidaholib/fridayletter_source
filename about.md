@@ -16,5 +16,6 @@ This archive currently contains more than 80 items ranging from 2015 to 2017.
 
 Please note, to preserve basic functionality outside of the original content management system, all JavaScript and external dependencies found in the original web pages and email messages have been removed. 
 Some features have been disabled and links may be broken or out of date.
+If you would like to recover broken links, please try pasting the URL in the Internet Archive [Wayback Machine](https://archive.org/web/).
 
 For current newsletters, please visit [Office of the President Communications](http://www.uidaho.edu/president/communications).
