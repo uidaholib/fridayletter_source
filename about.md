@@ -14,8 +14,8 @@ The letter is sent via email to students, faculty, and staff in addition to Alum
 To ensure continued access to the unique content of university communications, University of Idaho Library captures items in their original web context from the Office of the President's web page on an annual basis.
 This archive currently contains more than 80 items ranging from 2015 to 2017.
 
-Please note, to preserve basic functionality outside of the original content management system, all JavaScript and external dependencies found in the original web pages and email messages have been removed. 
-Some features have been disabled and links may be broken or out of date.
-If you would like to recover broken links, please try pasting the URL in the Internet Archive [Wayback Machine](https://archive.org/web/).
+**Please note,** the archived email messages are in a variety of formats and may not display as originally intended. 
+Some images, links, and functionality may be broken or out of date.
+If you would like to recover a broken link, please try pasting the URL in the Internet Archive [Wayback Machine](https://archive.org/web/).
 
 For current newsletters, please visit [Office of the President Communications](http://www.uidaho.edu/president/communications).
