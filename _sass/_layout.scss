@@ -459,6 +459,14 @@ width:100%;
     border:none;color:inherit;text-decoration:none;font-size:inherit;
   }
 }
+.about-narrative {
+  width:75%;
+  margin:0% auto;
+  font-size: 18px;
+  @include media-query($on-palm) {
+    width:90%;
+  }
+}
 #letter-title {
     font-family: 'Oswald', Verdana, Verdana, Geneva, sans-serif;
     font-weight: 300;
@@ -468,13 +476,12 @@ width:100%;
     line-height: 1.1;
     color: inherit;
 }
-.about-narrative {
-  width:75%;
-  margin:0% auto;
-  font-size: 18px;
-  @include media-query($on-palm) {
-    width:90%;
-  }
+.letter-info {
+  border-bottom: solid 1px $grey-color;
+}
+#archive-warning {
+  font-style: italic;
+  color: $brand-color;
 }
 .letter {
   width:75%;
