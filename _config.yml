@@ -9,7 +9,7 @@ email: ewilliamson@uidaho.edu
 
 # url variables
 url: https://www.lib.uidaho.edu/digital/fridayletter
-baseurl: https://www.lib.uidaho.edu/digital/fridayletter
+baseurl: /fridayletter
 liburl: https://www.lib.uidaho.edu
 digurl: https://www.lib.uidaho.edu/digital
 repourl: https://digital.lib.uidaho.edu
