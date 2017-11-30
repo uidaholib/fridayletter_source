@@ -1,7 +1,7 @@
 <script>
     function google_search() {
         var query = document.getElementById("google-search").value;
-        var domain = "{{ site.url }}{{ site.baseurl }}";
+        var domain = "{{ site.baseurl | absolute_url }}";
         window.open("https://www.google.com/search?q=" + query + "+site:" + domain);
     }
 </script>

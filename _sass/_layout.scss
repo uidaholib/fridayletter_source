@@ -382,38 +382,31 @@ label{font-weight:300;}
 /** Header Top **/
 
 .diginit {
-
-    margin-bottom: -1px;
-    padding:0 3.5% ;
-text-align: center;
-margin-top:-2px;
-img{
-
-  border: none;color:none;
-  }
-
+  margin-bottom: -1px;
+  padding:0 3.5% ;
+  text-align: center;
+  margin-top:-2px;
+  img {
+    display: inline;
+    border: none;
+    }
   @include media-query($on-laptop) {
-      padding:10px;
-      margin-left:10px;
-      a{
-    float:left;
-}
+    padding:10px;
+    margin-left:10px;
+    a {
+      float:left;
+    }
   }
 }
 
-
-
-  #libleft{
+#libleft {
   margin: 0px 0px 10px 10px;
   border:none;
   @include media-query($on-laptop) {
   margin:0 10px;}
    @include media-query($on-palm) {
   display:none;}
-  }
-
-
-
+}
 
 .box1{ color: #333;
 background: #f9f9f9;

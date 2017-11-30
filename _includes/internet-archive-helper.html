@@ -1,7 +1,7 @@
 <script>
     function archiveorg_search() {
         var query = document.getElementById("archiveorg-search").value;
-        var domain = "{{ site.url }}{{ site.baseurl }}";
+        var domain = "{{ site.baseurl | absolute_url }}";
         window.open("http://web.archive.org/web/" + query);
     }
 </script>
