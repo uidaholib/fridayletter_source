@@ -14,11 +14,19 @@ The archive currently contains more than 80 items ranging from 2015 to 2017.
 
 This table provides sorting and basic search of the archive contents. 
 Click on the "Read" link to see the full message.
-
+<style>
+    #columns {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+    margin: 0;
+}
+</style>
 <table id="letter-table" class="display">
     <thead>
         <tr>
-            <th>Date</th>
+            <th style="width: 40%">Date</th>
             <th>Subject</th>
             <th>Body</th>
         </tr>
@@ -39,5 +47,13 @@ Click on the "Read" link to see the full message.
 <script>
     var dataTable = new DataTable("#letter-table", {
         perPage: 20,
+        fixedColumns: true,
+        layout: {
+            top: "{info}{search}",
+            bottom: "{select}{pager}"
+        },
+        columns: [
+            { select: 0, sort: "desc" }
+        ]
     });
 </script>

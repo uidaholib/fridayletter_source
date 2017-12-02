@@ -11,3 +11,11 @@ For example, `http://www.uidaho.edu/404.aspx?item=%2fed%2fabout%2feducation-buil
  
 Add the date of the email to the archive.org url api, `http://web.archive.org/web/` + `[date in 1-24 digits only]` + `/` + `[the orginal url including protocol]`. 
 For example, `http://web.archive.org/web/2015/http://www.uidaho.edu/ed/about/education-building-renovation-project` will retrieve the broken link from the web archive.
+
+## Google site search
+
+Search created in https://cse.google.com/cse/
+
+In look and feel, choose layout = Full width, theme = minimal
+
+add code snippet to search.md
