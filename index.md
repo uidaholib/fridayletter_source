@@ -8,12 +8,12 @@ title: Home
 
 ## Browse The Friday Letter Archive
 
-The Friday Letter is the University of Idaho's long-running, weekly message from the president to internal and external members of the university community.
-The University of Idaho Library captures items from the Office of the President's web page on an annual basis.
-The archive currently contains more than 80 items ranging from 2015 to 2017.
+The Friday Letter is the University of Idaho's long-running, weekly message from the president to internal and external members of the university community. The University of Idaho Library captures items from the Office of the President's web page on an annual basis. 
+The archive currently contains more than 150 items from 2013 to 2017. For more information from the Friday Letter please contact [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/contactus.html).
 
 This table provides sorting and basic search of the archive contents. 
 Click on the "Read" link to see the full message.
+
 <style>
     #columns {
     display: flex;
