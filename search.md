@@ -9,7 +9,7 @@ title: Search
 
 <script>
   (function() {
-    var cx = '000200075986859166645:vgqzwszorfu';
+    var cx = '003965900948510015874:revdz5x4dm0';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;
