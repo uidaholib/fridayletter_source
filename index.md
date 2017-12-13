@@ -53,7 +53,7 @@ Click on the "Read" link to see the full message.
             bottom: "{select}{pager}"
         },
         columns: [
-            { select: 0, sort: "desc" }
+            { select: 0, sort: "asc" }
         ]
     });
 </script>

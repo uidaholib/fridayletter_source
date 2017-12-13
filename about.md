@@ -12,7 +12,9 @@ The letter is sent via email to students, faculty, and staff in addition to Alum
 <img src="images/fridayletter-header.jpg" style="width:70%">
 
 To ensure continued access to the unique content of university communications, University of Idaho Library captures items in their original web context from the Office of the President's web page on an annual basis.
-This archive currently contains more than 80 items ranging from 2015 to 2017.
+This archive currently contains more than 150 items ranging from 2013 to 2017.
+To browse the collection, a [table]({{ 'index.html' | relative_url }}) provides sorting and basic search. 
+Alternatively, the content can be searched using [Google Custom Search]({{ 'search.html' | relative_url }}).
 
 **Please note,** the archived email messages are in a variety of formats and may not display as originally intended. 
 Some images, links, and functionality may be broken or out of date.
