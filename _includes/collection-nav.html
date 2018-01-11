@@ -22,7 +22,7 @@
                    <script>
                         function google_search() {
                             var query = document.getElementById("google-search").value;
-                            window.open("{{ '/search.html' | absolute_url }}?q=" + query );
+                            window.open("{{ '/search.html' | absolute_url }}?q=" + query, "_self" );
                         }
                     </script>
                     {% if page.url != "/search.html" %}
