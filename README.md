@@ -4,4 +4,4 @@ Jekyll project source for Friday Letter digital collection, University of Idaho 
 
 site: https://lib.uidaho.edu/digital/fridayletter
 
-2017
+2017-18

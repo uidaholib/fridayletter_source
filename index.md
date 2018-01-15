@@ -6,16 +6,15 @@ title: Home
 
 <link href="{{ site.baseurl }}/css/vanilla-dataTables.min.css" rel="stylesheet" type="text/css">
 
-## Browse The Friday Letter Archive
+<img src="images/fridayletter-header-crop.jpg" style="width:100%">
 
-The Friday Letter is the University of Idaho's long-running, weekly message from the president to internal and external members of the university community. The University of Idaho Library captures items from the Office of the President's web page on an annual basis. 
-The archive currently contains more than 150 items from 2013 to 2017. For more information from the Friday Letter please contact [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/contactus.html).
+## Browse the Friday Letter Archive
 
-This table provides sorting and basic search of the archive contents. 
-Click on the "Read" link to see the full message.
+The Friday Letter is the University of Idaho's long-running, weekly message from the president to the university community. The University of Idaho Library captures items from the Office of the President's web page on an annual basis and select materials are made available in the [Web Archive Collections](https://www.lib.uidaho.edu/digital/webarchive/).
+For more information from the Friday Letter please contact [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/contactus.html).
 
 <style>
-    #columns {
+#columns {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -26,23 +25,23 @@ Click on the "Read" link to see the full message.
 <table id="letter-table" class="display">
     <thead>
         <tr>
-            <th style="width: 40%">Date</th>
-            <th>Subject</th>
+            <th>Title</th>
+            <th>Date</th>
             <th>Body</th>
         </tr>
     </thead>
     <tbody>
 {% for item in items %}        
         <tr>
+            <td><a href="{{ site.baseurl }}/letters/{{ item.date }}.html">{% if item.title %}{{ item.title }}{% else %}{{ item.date | date: "%a, %b %d, %Y" }}{% endif %}</a></td>
             <td>{{ item.date }}</td>
-            <td>{{ item.title }}</td>
             <td>{{ item.body | strip_html | truncatewords: 40 }} <a href="{{ site.baseurl }}/letters/{{ item.date }}.html">Read</a></td>
         </tr>
 {% endfor %}
     </tbody>
 </table>
 
-<script src="{{ site.baseurl }}/css/vanilla-dataTables.min.js" type="text/javascript"></script>
+<script src="{{ "/css/vanilla-dataTables.min.js" | absolute_url }}" type="text/javascript"></script>
 
 <script>
     var dataTable = new DataTable("#letter-table", {
@@ -53,7 +52,7 @@ Click on the "Read" link to see the full message.
             bottom: "{select}{pager}"
         },
         columns: [
-            { select: 0, sort: "asc" }
+            { select: 1, sort: "asc" }
         ]
     });
 </script>
