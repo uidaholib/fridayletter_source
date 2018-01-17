@@ -5,7 +5,7 @@ title: Search
 
 ## Google Site Search
 
-<p id="archive-warning">Please note: Site Search is a free service provided by Google. Results depend on third party indexing.</p>
+<p id="archive-warning">Please note: Site Search is a free service provided by Google and may contain ads. Results depend on third party indexing.</p>
 
 <script>
   (function() {
