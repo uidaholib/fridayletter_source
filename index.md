@@ -10,10 +10,10 @@ title: Home
 
 ## Browse the Friday Letter Archive
 
-The Friday Letter is the University of Idaho's long-running, weekly message from the president to the university community. The University of Idaho Library captures items from the Office of the President's web page on an annual basis and select materials are made available in the [Web Archive Collections](https://www.lib.uidaho.edu/digital/webarchive/).
-For more information from the Friday Letter please contact [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/contactus.html).
+The Friday Letter is the University of Idaho's long-running, weekly message from the president to the university community. The University of Idaho Library captures items from the [Office of the President's web page](https://www.uidaho.edu/president) on an annual basis and select materials are made available in the [Web Archive Collections](https://www.lib.uidaho.edu/digital/webarchive/).
+For more information, please contact [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/contactus.html).
 
-<style>
+<!--<style>
 #columns {
     display: flex;
     align-items: center;
@@ -21,7 +21,7 @@ For more information from the Friday Letter please contact [Special Collections 
     flex-grow: 1;
     margin: 0;
 }
-</style>
+</style>-->
 <table id="letter-table" class="display">
     <thead>
         <tr>
@@ -34,7 +34,7 @@ For more information from the Friday Letter please contact [Special Collections 
 {% for item in items %}        
         <tr>
             <td><a href="{{ site.baseurl }}/letters/{{ item.date }}.html">{% if item.title %}{{ item.title }}{% else %}{{ item.date | date: "%a, %b %d, %Y" }}{% endif %}</a></td>
-            <td>{{ item.date }}</td>
+            <td>{{ item.date | replace: "-", "/" }}</td>
             <td>{{ item.body | strip_html | truncatewords: 40 }} <a href="{{ site.baseurl }}/letters/{{ item.date }}.html">Read</a></td>
         </tr>
 {% endfor %}
