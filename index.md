@@ -13,15 +13,6 @@ title: Home
 The Friday Letter is the University of Idaho's long-running, weekly message from the president to the university community. The University of Idaho Library captures items from the [Office of the President's web page](https://www.uidaho.edu/president) on an annual basis and select materials are made available in the [Web Archive Collections](https://www.lib.uidaho.edu/digital/webarchive/).
 For more information, please contact [Special Collections and Archives](https://www.lib.uidaho.edu/special-collections/contactus.html).
 
-<!--<style>
-#columns {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-grow: 1;
-    margin: 0;
-}
-</style>-->
 <table id="letter-table" class="display">
     <thead>
         <tr>
@@ -31,11 +22,11 @@ For more information, please contact [Special Collections and Archives](https://
         </tr>
     </thead>
     <tbody>
-{% for item in items %}        
+{% for item in items %}    
         <tr>
             <td><a href="{{ site.baseurl }}/letters/{{ item.date }}.html">{% if item.title %}{{ item.title }}{% else %}{{ item.date | date: "%a, %b %d, %Y" }}{% endif %}</a></td>
             <td>{{ item.date | replace: "-", "/" }}</td>
-            <td>{{ item.body | strip_html | truncatewords: 40 }} <a href="{{ site.baseurl }}/letters/{{ item.date }}.html">Read</a></td>
+            <td><span class="">{{ item.body | strip_html | truncatewords: 40 }}</span><a href="{{ site.baseurl }}/letters/{{ item.date }}.html">Read</a></td>
         </tr>
 {% endfor %}
     </tbody>
