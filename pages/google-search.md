@@ -1,6 +1,7 @@
 ---
 title: Google CSE
 layout: page
+permalink: /search/google-search.html
 ---
 
 ## Google Site Search

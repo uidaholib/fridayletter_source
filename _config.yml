@@ -19,5 +19,5 @@ page_gen:
   - data: 'president_communications'
     template: 'items'
     name: 'object-id'
-    dir: 'items'
+    dir: 'letters'
     extension: 'html'   
