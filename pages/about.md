@@ -6,7 +6,9 @@ permalink: /about.html
 featured-image:
 ---
 
-# About {{ site.title }}
+<img src="images/fridayletter-header.jpg" class="img-fluid">
+
+# About The Friday Letter Archive
 
 For over two decades, The Friday Letter has been the University of Idaho's weekly message from the President to internal and external members of the university community. 
 The Office of the President's website publishes a variety of official communications including the Friday Letter, Vandal Connection, reports, videos, and presentations.
@@ -24,8 +26,6 @@ For current newsletters, please visit [Office of the President Communications](h
 </div>
 
 ## About Communications 
-
-<img src="images/fridayletter-header.jpg" class="img-fluid">
 
 The Friday Letter
 
