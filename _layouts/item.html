@@ -6,76 +6,13 @@ layout: default
 <div class="container py-3">
     <ul class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ '/' | absolute_url }}">Home</a></li>
-        <li class="breadcrumb-item"><a href="{{ '/browse.html' | absolute_url }}">Items</a></li>
         <li class="breadcrumb-item active">{{ page.title | truncatewords: 10 }}</li>
     </ul>
 
     <div class="row">
-        <div class="col-md-6" id="lightgallery" >
-            <div class="card mb-2">
-                {% if page.format contains 'image' %}
-                <div class="p-3">
-                    <p><a href="{{ site.objects }}/{{ page.filename }}" target="_blank"><img src="{{ site.objects }}/small/{{ page.object-id }}_sm.jpg" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid"></a></p>
-                </div>
-                {%- elsif page.format contains 'audio' -%}
-                <div class="p-3">
-                    <p class="text-center">
-                        <audio controls class="mp3-item-player">
-                            <source src="{% include download/item.html %}" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </p>
-                </div>
-                {%- elsif page.youtube-id -%}
-                <div class="p-3">
-                    <p><img src="{{ site.objects }}/{{ page.object-id }}.jpg" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid"></p>
-                </div>
-                {%- elsif page.format contains 'video' -%}
-                <div class="p-3">
-                    <p class="text-center">
-                        <video width="320" height="240" controls>
-                            <source src="{% include download/video.html %}" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </p>
-                </div>
-                {%- else -%}
-                <div class="p-3">
-                    <p class="text-center">
-                    <a href="{{ site.objects }}/{{ page.filename }}" target="_blank"><img src="{{ site.objects }}/small/{{ page.object-id }}_sm.jpg" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid thumb"></a></p> 
-                </div>
-                {%- endif -%}
-                <div class="text-center my-2">
-                    {% if page.youtube-id %}
-                    <button type="button" class="btn btn-outline-clearwater" data-toggle="modal" data-target="#videoModal">View Interview</button>
-                    <!-- Modal -->
-                    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="videoModalLabel">{{ page.title }}</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ page.youtube-id }}?rel=0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-
-                    {%- else -%}
-                    <a href="{{ site.objects }}/{{ page.filename }}" target="_blank" class="btn btn-outline-clearwater" title="Object download">Download {{ page.format | split: '/' | last | upcase }}</a>
-                    {%- endif -%}
-                </div>
-            </div>
-        </div>
 
         <div class="col-md-6">
-            <div id="item-metadata" class="metadata">
+            <div id="item-metadata" class="metadata mb-2">
                 <dl>
                     {% for f in fields %}{% if f.display-name and page[f.field] %}
                     <dt class="field">{{ f.display-name }}:</dt>
@@ -89,52 +26,83 @@ layout: default
                         {{ page[f.field] | replace: '""','"' }}{% endif %}
                     </dd>
                     {% endif %}{% endfor %}
+                    <dt>Reference Link:</dt>
+                    <dd>{{ page.url | absolute_url }}</dd>
                 </dl>
             </div>
         </div>
 
-    </div>
+        <div class="col-md-6" >
+            <div class="card mb-2">
+                <div class="card-header">Objects</div>
+                <div class="card-body">
+                    
+                    {% if page.news_source %}
+                    <h5 class="card-title">News Item</h5>
+                    <p class="card-text">{{ page.news_source }}</p>
+                    <a href="{{ page.link }}" target="_blank" rel="noopener" class="btn btn-primary">Article Link</a>
+                    {% endif %}
+                    {% if page.youtube_id %}
+                    <div class="p-3">
+                        <p><img src="https://img.youtube.com/vi/{{ page.youtube_id }}/hqdefault.jpg" alt="{{ page.title | escape }}" alt="item thumbnail" class="img-fluid img-thumb"></p>
+                    </div>
+                    <p><button type="button" class="btn btn-clearwater" data-toggle="modal" data-target="#videoModal">View Video</button></p>
+                    <!-- Modal -->
+                    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="videoModalLabel">{{ page.title }}</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ page.youtube_id }}?rel=0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if page.filename %}
+                    <p><a href="{{ site.objects }}/{{ page.filename }}" target="_blank" rel="noopener" class="btn btn-primary">Download Report</a></p>
+                    {% endif %}
+                    {% if page.slides %}
+                    <p><a href="{{ site.objects }}/{{ page.slides }}" target="_blank" rel="noopener" class="btn btn-primary">Download Slides</a></p>
+                    {% endif %}
+                    {% if page.transcript %}
+                    <p><a href="{{ site.objects }}/{{ page.transcript }}" target="_blank" rel="noopener" class="btn btn-primary">Download Transcript</a></p>
+                    {% endif %}
+                    {% if page.email %}
+                    <p><button type="button" class="btn btn-clearwater" data-toggle="modal" data-target="#videoModal">View Email</button></p>
+                    <p><em>Please note, archived email messages are in a variety of formats and may not display as originally intended. Some images, links, and functionality may be broken or out of date.</em></p>
+                    <!-- Modal -->
+                    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="videoModalLabel">{{ page.title }}</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="">
+                                        {{ page.email }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
 
-    <div class="row">
-        <div class="col-md-3">
-            <div class="card mb-2">
-                <div class="card-header">Related Items</div>
-                <div class="card-body">
-                    {% assign facets = page.feature_subjects | split: ";" %}
-                    <p>
-                    {% for f in facets %}
-                        <a class="btn btn-sm btn-secondary m-1" href="{{ f | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ f }}</a> 
-                    {% endfor %}
-                    </p>
                 </div>
             </div>
+
         </div>
-        <div class="col-md-4">
-            <div class="card mb-2">
-                <div class="card-header">Source</div>
-                <div class="card-body">
-                    <dl>
-                        <dt>Preferred Citation:</dt> 
-                        <dd>"{% if page.title_full %}{{ page.title_full }}{% else %}{{ page.title }}{% endif %}", <em>{{ site.data.theme.title }}</em>, University of Idaho Library.</dd>
-                        <dt>Reference Link:</dt>
-                        <dd>{{ page.url | relative_url | prepend: "https://www.lib.uidaho.edu" }}</dd>
-                    </dl>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-5">
-            <div class="card mb-2">
-                <div class="card-header">Rights</div>
-                <div class="card-body">
-                    <dl>
-                        {% if page.rights %}
-                        <dd>{{ page.rights }}</dd>{% endif %}
-                        {% if page.standardized_rights %}<dt>Standardized Rights:</dt>
-                        <dd>{{ page.standardized_rights }}<br>{{ page.rights_statement }}</dd>{% endif %}
-                    </dl>
-                </div>
-            </div>
-        </div>
+            
     </div>
 
 {%- if site.data.theme.browse-buttons == true -%}
@@ -153,7 +121,7 @@ layout: default
 {%- assign forward_url = site.data[site.metadata][forward].object-id | append: '.html' | prepend: '/items/' | relative_url -%}
     <div class="text-center">
         <a class="btn btn-secondary" href="{{ back_url }}" role="button" id="prev-page-button">&laquo; Previous</a>
-        <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}" role="button">| Back to browse |</a>
+        <a class="btn btn-secondary" href="{{ '/' | relative_url }}" role="button">| Back to browse |</a>
         <a class="btn btn-secondary" href="{{ forward_url }}" role="button" id="next-page-button">Next &raquo;</a>
     </div>
     <div id="item-nav">
