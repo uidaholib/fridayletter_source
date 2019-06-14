@@ -1,7 +1,7 @@
-title,date,youtube_id
-"Singing of You: A Very Vandaleers Holiday 2016",2016-12-16,FGEL6qi9hN8
-"Strategic Vision 2016",2016-09-23,FAY9UEVqyoE
-"Hands-on Learning with Our Clean Snowmobile Challenge Team",2017-04-27,yLMV6TKSK14
-"A Unique Printmaking Project with our MFA Program",2018-10-02,NyT1gP-1dE8
-"University of Idaho Football Press Conference",2016-04-28,-VX9iY7QZsY
-"University of Idaho Announcement of C. Scott Green as President",2019-04-18,tWolGIu3hDE
+title,date,category,news_source,link,filename,youtube_id,slides,transcript,email,source,type,format
+Singing of You: A Very Vandaleers Holiday 2016,2016-12-16,Video,,,,FGEL6qi9hN8,,,,https://www.uidaho.edu/president/communications/videos,Image;MovingImage,video/mp4
+Strategic Vision 2016,2016-09-23,Video,,,,FAY9UEVqyoE,,,,https://www.uidaho.edu/president/communications/videos,Image;MovingImage,video/mp4
+Hands-on Learning with Our Clean Snowmobile Challenge Team,2017-04-27,Video,,,,yLMV6TKSK14,,,,https://www.uidaho.edu/president/communications/videos,Image;MovingImage,video/mp4
+A Unique Printmaking Project with our MFA Program,2018-10-02,Video,,,,NyT1gP-1dE8,,,,https://www.uidaho.edu/president/communications/videos,Image;MovingImage,video/mp4
+University of Idaho Football Press Conference,2016-04-28,Video,,,,-VX9iY7QZsY,,,,https://www.uidaho.edu/president/communications/videos,Image;MovingImage,video/mp4
+University of Idaho Announcement of C. Scott Green as President,2019-04-18,Video,,,,tWolGIu3hDE,,,,https://www.uidaho.edu/president/communications/videos,Image;MovingImage,video/mp4
