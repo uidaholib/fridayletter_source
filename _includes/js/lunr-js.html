@@ -48,7 +48,7 @@ function lunr_search () {
             {% assign display = fields | where: 'display','true' %}
             {% for d in display %}
             {% if forloop.first %}
-            '<p class="h4"><a href="{{ site.baseurl }}/items/' + store[ref].id + '.html">' + store[ref].{{ fields[0].field }}  + '</a></p>' +
+            '<p class="h4"><a href="{{ site.baseurl }}/letters/' + store[ref].id + '.html">' + store[ref].{{ fields[0].field }}  + '</a></p>' +
             '<p class="ml-3">' +
               {% else %}
               store[ref].{{ d.field }} + '<br> ' +
@@ -66,5 +66,6 @@ $(document).ready(function() {
     $('input#search').val(queryString);
     lunr_search (); 
   }
+  $("#loading").hide();
 });
 </script>
