@@ -62,7 +62,7 @@ function lunr_search () {
 $(document).ready(function() {
   $('input#search').on('keyup', lunr_search );
   var queryString = decodeURIComponent(window.location.search.substring(1).split("=")[1]);
-  if (queryString) { 
+  if (queryString != "undefined" ) { 
     $('input#search').val(queryString);
     lunr_search (); 
   }
