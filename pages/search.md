@@ -4,4 +4,6 @@ layout: search
 permalink: /search/
 ---
 
-## Full Metadata Search:
+## Basic Search:
+
+<p class="text-muted">Search title, date, and email text. Alternatively, try <a href="{{ 'search/google-search.html' | absolute_url }}">Google CSE</a> site search.</p>

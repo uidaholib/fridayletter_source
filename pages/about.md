@@ -6,7 +6,6 @@ permalink: /about.html
 featured-image:
 ---
 
-<img src="images/fridayletter-header.jpg" class="img-fluid">
 
 # About The Friday Letter Archive
 
@@ -17,13 +16,15 @@ To ensure continued access to this unique content, University of Idaho Library c
 Select materials are made available in the [Web Archive Collections](https://www.lib.uidaho.edu/digital/webarchive/).
 This archive currently contains more than 300 items ranging from 2013 to 2019.
 To browse the collection, a [table]({{ '/' | relative_url }}) provides sorting and basic search. 
-Alternatively, the content can be searched using [Google Custom Search]({{ 'search.html' | relative_url }}).
+Alternatively, the content can be discovered using the [Search page]({{ '/search/' | relative_url }}) or [Google Custom Search]({{ '/search/google-search.html' | relative_url }}).
 
 For current newsletters, please visit [Office of the President Communications](http://www.uidaho.edu/president/communications).
 
 <div class="alert alert-warning" role="alert">
-<em>Please note</em>, the archived email messages are in a variety of formats and may not display as originally intended. Some images, links, and functionality may be broken or out of date. If you would like to recover a broken link, please try pasting the URL in the Internet Archive <a href="https://archive.org/web/" target="_blank" rel="noopener">Wayback Machine</a>.
+<em>Please note</em>, the archived email messages are in a variety of formats and may not display as originally intended. Some images, links, and functionality may be broken or out of date. If you would like to recover a broken link, please try pasting the URL in the <a href="https://archive.org/web/" target="_blank" rel="noopener">Internet Archive Wayback Machine</a>.
 </div>
+
+<img src="images/fridayletter-header.jpg" class="img-fluid">
 
 ## About Communications 
 
