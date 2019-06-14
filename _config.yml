@@ -18,6 +18,6 @@ metadata: president_communications
 page_gen:
   - data: 'president_communications'
     template: 'items'
-    name: 'object_id'
+    name: 'object-id'
     dir: 'items'
     extension: 'html'   
