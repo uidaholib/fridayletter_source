@@ -9,15 +9,15 @@ baseurl: /digital/fridayletter
 # url to the shared assets folder on Digital
 digital-assets: https://www.lib.uidaho.edu/digital/assets
 # Collection's objects dir location
-objects: https://www.lib.uidaho.edu/digital/objects/moscon
+objects: https://www.lib.uidaho.edu/digital/objects/friday
 
 # metadata filename in _data
-metadata: fridayletters
+metadata: president_communications
 
 # page gen settings https://github.com/avillafiorita/jekyll-datapage_gen
 page_gen:
-  - data: 'fridayletters'
+  - data: 'president_communications'
     template: 'items'
-    name: 'object-id'
+    name: 'object_id'
     dir: 'items'
     extension: 'html'   
