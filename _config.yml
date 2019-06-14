@@ -9,7 +9,7 @@ baseurl: /digital/fridayletter
 # url to the shared assets folder on Digital
 digital-assets: https://www.lib.uidaho.edu/digital/assets
 # Collection's objects dir location
-objects: https://www.lib.uidaho.edu/digital/objects/friday
+objects: https://www.lib.uidaho.edu/digital/objects/fridayletter
 
 # metadata filename in _data
 metadata: president_communications
