@@ -12,7 +12,7 @@ layout: default
     <div class="row">
 
         <div class="col-md-6">
-            <div id="item-metadata" class="metadata mb-2">
+            <div id="item-metadata" class="metadata mb-3">
                 <dl>
                     {% for f in fields %}{% if f.display-name and page[f.field] %}
                     <dt class="field">{{ f.display-name }}:</dt>
@@ -33,7 +33,7 @@ layout: default
         </div>
 
         <div class="col-md-6" >
-            <div class="card mb-2">
+            <div class="card mb-3">
                 <div class="card-header">Objects</div>
                 <div class="card-body">
                     
@@ -119,7 +119,7 @@ layout: default
 {%- endunless -%}
 {%- assign back_url = site.data[site.metadata][back].object-id | append: '.html' | prepend: '/letters/' | relative_url -%}
 {%- assign forward_url = site.data[site.metadata][forward].object-id | append: '.html' | prepend: '/letters/' | relative_url -%}
-    <div class="text-center">
+    <div class="text-center mt-3">
         <a class="btn btn-secondary" href="{{ back_url }}" role="button" id="prev-page-button">&laquo; Previous</a>
         <a class="btn btn-secondary" href="{{ '/' | relative_url }}" role="button">| Back to browse |</a>
         <a class="btn btn-secondary" href="{{ forward_url }}" role="button" id="next-page-button">Next &raquo;</a>
