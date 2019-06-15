@@ -11,9 +11,9 @@ author: evanwill # You! Add your github username
 google-cse-id: "003965900948510015874:revdz5x4dm0"
 
 # Home page
-home-banner-image-link: 
+home-banner-image-link: https://www.lib.uidaho.edu/digital/objects/fridayletter/images/fridayletter-header.jpg
 # img tile for accessibility
-home-banner-image-title: 
+home-banner-image-title: "Letter from the President, letterhead"
 home-title-y-padding: 4em # the margin from the top your title portion will appear
 carousel-height: # in px, but don't include the "px"; default is 300.
 featured-subjects: #separate semi-colon(';') - if left blank, will be automatically generated to create top 5 subjects
