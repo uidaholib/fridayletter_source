@@ -1,26 +1,23 @@
-# Jekyll GH-pages Digital Collection Generator
-
-# Note: use environment variable on build command to include analytics
-# JEKYLL_ENV=production jekyll build
-
-# Site settings
-title: The Friday Letter Archive
-description: A collection of the president's weekly messages to the Vandal family
-keywords: university of idaho, university communications, president's office, digital collections, web archive
-owner: University of Idaho Library
-email: ewilliamson@uidaho.edu
+# Jekyll Digital Collection Generator
 
 # url variables
+# library's domain (only changed if using github pages)
 url: https://www.lib.uidaho.edu
+# location on the website, normally in /digital
+# e.g. /digital/hjccc
 baseurl: /digital/fridayletter
-liburl: https://www.lib.uidaho.edu
-digurl: https://www.lib.uidaho.edu/digital
-repourl: https://digital.lib.uidaho.edu
+# url to the shared assets folder on Digital
+digital-assets: https://www.lib.uidaho.edu/digital/assets
+# Collection's objects dir location
+objects: https://www.lib.uidaho.edu/digital/objects/fridayletter
+
+# metadata filename in _data
+metadata: president_communications
 
 # page gen settings https://github.com/avillafiorita/jekyll-datapage_gen
 page_gen:
-  - data: 'fridayletters'
-    template: 'letter'
-    name: 'date'
+  - data: 'president_communications'
+    template: 'items'
+    name: 'object-id'
     dir: 'letters'
-    extension: 'html'
+    extension: 'html'   
