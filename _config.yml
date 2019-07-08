@@ -1,5 +1,8 @@
 # Jekyll Digital Collection Generator
 
+# Note: use environment variable on build command to include analytics
+# JEKYLL_ENV=production jekyll build
+
 # url variables
 # library's domain (only changed if using github pages)
 url: https://www.lib.uidaho.edu
@@ -7,7 +10,7 @@ url: https://www.lib.uidaho.edu
 # e.g. /digital/hjccc
 baseurl: /digital/fridayletter
 # url to the shared assets folder on Digital
-digital-assets: https://www.lib.uidaho.edu/digital/assets
+digital-assets: https://www.lib.uidaho.edu/assets
 # Collection's objects dir location
 objects: https://www.lib.uidaho.edu/digital/objects/fridayletter
 
@@ -21,3 +24,5 @@ page_gen:
     name: 'object-id'
     dir: 'letters'
     extension: 'html'   
+
+exclude: ['Rakefile']
