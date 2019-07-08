@@ -25,4 +25,4 @@ page_gen:
     dir: 'letters'
     extension: 'html'   
 
-exclude: ['Rakefile']
+exclude: [work, 'Rakefile']
