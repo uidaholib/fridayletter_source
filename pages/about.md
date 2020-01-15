@@ -58,7 +58,7 @@ The tracking links are then replaced by their actual URLs.
 To see the page as it was when originally linked, it is possible to try using the <a href="https://archive.org/web/" target="_blank" rel="noopener">Internet Archive Wayback Machine</a> to retrieve the resource.
 Add the date of the email to the Wayback API following this pattern: 
 
-`https://web.archive.org/web/` + `[date in 1-24 digits only]` + `/` + `[the original url including protocol]`. 
+`https://web.archive.org/web/` + `[date in 1-24 digits only]` + `/` + `[the original url including protocol]` 
 
 For example, `https://web.archive.org/web/2015/http://www.uidaho.edu/ed/about/education-building-renovation-project` will retrieve the broken link from the web archive.
 If the Wayback has the page archived, it will resolve to the capture nearest the date you requested.
@@ -68,8 +68,17 @@ UIdaho's servers will return a 404 page that also obscures the original link.
 By looking at the 404 URL, the original request can be reconstructed by deleting `/404.aspx?item=`, replacing the escaped entity `%2f` with `/`, and removing any additional parameters after `&`. 
 Once reconstructed, the original URL can be used in the Wayback Machine.
 
-For example, `https://www.uidaho.edu/404.aspx?item=%2fed%2fabout%2feducation-building-renovation-project&user=extranet%5cAnonymous&site=website` 
-Thus, `https://www.uidaho.edu/ed/about/education-building-renovation-project` was the original request, that can be used in the Wayback.
+For example, for the 404 URL: 
+
+`https://www.uidaho.edu/404.aspx?item=%2fed%2fabout%2feducation-building-renovation-project&user=extranet%5cAnonymous&site=website`
+
+The original request was: 
+
+`https://www.uidaho.edu/ed/about/education-building-renovation-project` 
+
+Which can then be used in the Wayback Machine to retrieve the original page as it was in 2015:
+
+`https://web.archive.org/web/2015*/https://www.uidaho.edu/ed/about/education-building-renovation-project`
 
 </div>
 </div>
