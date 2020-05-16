@@ -76,14 +76,14 @@ layout: default
                     <p><a href="{{ site.objects }}/{{ page.transcript }}" target="_blank" rel="noopener" class="btn btn-primary">Download Transcript</a></p>
                     {% endif %}
                     {% if page.email %}
-                    <p><button type="button" class="btn btn-clearwater" data-toggle="modal" data-target="#videoModal">View Email</button></p>
+                    <p><button type="button" class="btn btn-clearwater" data-toggle="modal" data-target="#emailModal">View Email</button></p>
                     <p><em>Please note, archived email messages are in a variety of formats and may not display as originally intended. Some images, links, and functionality may be broken or out of date.</em></p>
                     <!-- Modal -->
-                    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="emailModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg " role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="videoModalLabel">{{ page.title }}</h5>
+                                    <h5 class="modal-title" id="emailModalLabel">{{ page.title }}</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
