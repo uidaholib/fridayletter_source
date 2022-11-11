@@ -13,6 +13,22 @@ baseurl: /digital/fridayletter
 digital-assets: https://www.lib.uidaho.edu/assets
 # Collection's objects dir location
 objects: https://www.lib.uidaho.edu/digital/objects/fridayletter
+# location of code
+source-code: https://github.com/uidaholib/fridayletter_source/
+
+# Site settings
+# header and head metadata
+title: The Friday Letter Archive
+tagline: A Collection of the U of I President's Communications
+description: "An archive of the University of Idaho President's communications, including the Friday Letter, Vandal Connection, reports, videos, and presentations originally published on the website of the Office of the President."
+keywords: "University of Idaho; Office of the President; Communication; Newsletters; university communications; web archive" 
+author: evanwill  
+# Organization branding
+organization-name: "Digital Initiatives, University of Idaho Library"
+organization-link: https://www.lib.uidaho.edu/digital/
+organization-logo-banner: https://www.lib.uidaho.edu/media/digital/justdi_logo_sm.png
+organization-logo-nav: https://www.lib.uidaho.edu/media/digital/bannerlogo_allwhite.png
+
 
 # metadata filename in _data
 metadata: president_communications
@@ -26,3 +42,7 @@ page_gen:
     extension: 'html'   
 
 exclude: [work, 'Rakefile']
+
+# compress CSS output
+sass:
+  style: compressed
