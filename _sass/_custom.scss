@@ -1,6 +1,6 @@
 /* base */
 body {
-    font-family: $base-font-family;
+    //font-family: $base-font-family;
     font-size: $base-font-size;
     color: $black-color;
 }
@@ -17,7 +17,7 @@ a {
 #title {
     a { 
         font-size: 35px;
-        font-weight: 300;
+        //font-weight: 300;
         color: $text-color;
     }
     h1 {
