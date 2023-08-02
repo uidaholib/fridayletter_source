@@ -11,18 +11,17 @@ featured-image:
 
 # About The Friday Letter Archive
 
-For over two decades, The Friday Letter has been the University of Idaho's weekly message from the President to internal and external members of the university community. 
-The Office of the President's website publishes a variety of official communications including the Friday Letter, Vandal Connection, reports, videos, and presentations.
+For over two decades, [The Friday Letter](https://www.uidaho.edu/president/communications/friday-letter) has been the University of Idaho's weekly message from the President to internal and external members of the university community. 
+The [Office of the President's website](https://www.uidaho.edu/president/communications) publishes a variety of official communications including the Friday Letter, Vandal Connection, reports, videos, and presentations.
+To ensure continued access to this unique content, University of Idaho Library captures items in their original web context on an annual basis.
+Select materials are made available in our digital collections.
 
-To ensure continued access to this unique content, University of Idaho Library captures items in their original web context from the Office of the President's web page on an annual basis.
-Select materials are made available in the [Web Archive Collections](https://www.lib.uidaho.edu/digital/webarchive/).
-
-The Friday Letter Archive archive currently contains more than 300 items ranging from 2013 to 2019.
+The Friday Letter Archive archive currently contains hundreds items dating back to 2013.
 These items are in a variety of formats, including emails, slides, videos, speech transcripts, reports, and links to external articles.
 To browse the collection, a [table]({{ '/' | relative_url }}) provides sorting and basic search. 
 Alternatively, the content can be discovered using the [Search page]({{ '/search/' | relative_url }}) or [Google Custom Search]({{ '/search/google-search.html' | relative_url }}).
 
-For current newsletters, please visit [Office of the President Communications](http://www.uidaho.edu/president/communications).
+For current news, please visit [Office of the President Communications](http://www.uidaho.edu/president/communications).
 
 *Thank you to Brian Keenan for help assembling this content 2017 - 2019.*
 
@@ -64,7 +63,7 @@ For example, `https://web.archive.org/web/2015/http://www.uidaho.edu/ed/about/ed
 If the Wayback has the page archived, it will resolve to the capture nearest the date you requested.
 
 Some links to internal U of I pages are also broken. 
-UIdaho's servers will return a 404 page that also obscures the original link.
+U of I's servers will return a 404 page that also obscures the original link.
 By looking at the 404 URL, the original request can be reconstructed by deleting `/404.aspx?item=`, replacing the escaped entity `%2f` with `/`, and removing any additional parameters after `&`. 
 Once reconstructed, the original URL can be used in the Wayback Machine.
 
